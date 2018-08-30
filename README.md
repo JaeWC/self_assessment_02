@@ -9,12 +9,12 @@
 
 ## Grading Outline
 
-- [ ] underbar-map
-- [ ] underbar-uniq
-- [ ] underbar-memoize
-- [ ] underbar-extend
-- [ ] sumConsecutives
-- [ ] isAgeDiverse
+- [ complete ] underbar-map
+- [ complete ] underbar-uniq
+- [ complete ] underbar-memoize
+- [ complete ] underbar-extend
+- [ complete ] sumConsecutives
+- [ complete ] isAgeDiverse
 
 ## Self-Grading Process
 
@@ -62,7 +62,7 @@ Extend a given object with all the properties of the passed in object(s).
 ## sumConsecutives
 You are given a list/array which contains only integers (positive and negative). Your job is to sum only the numbers that are the same and consecutive. The result should be one list.
 
-* [ ] Implement an 'sumConsecutives' function
+* [ complete ] Implement an 'sumConsecutives' function
 
 ## isAgeDiverse
 You will be given an array of objects representing data about developers who have signed up to attend the next coding meetup that you are organising.
@@ -72,4 +72,4 @@ Your task is to return:
 true if developers from all of the following age groups have signed up: teens, twenties, thirties, forties, fifties, sixties, seventies, eighties, nineties, centenarian (at least 100 years young).
 false otherwise.
 
-* [ ] Implement an 'isAgeDiverse' function
+* [ complete ] Implement an 'isAgeDiverse' function
