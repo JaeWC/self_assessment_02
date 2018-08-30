@@ -11,6 +11,17 @@ var _ = {};
   // already computed the result for the given argument and return that value
   // instead if possible.
   _.memoize = function(func) {
+    var cache = {};
+
+    return function() {
+      var arg = Array.prototype.slice.call(arguments)
+      var key = JSON.stringify(arg)
+
+      if (!(key in cache)) {
+        cache[key] = func.apply(this, arg);
+      }
+      return cache[key];
+    }
   };
 
 }).call(this);
