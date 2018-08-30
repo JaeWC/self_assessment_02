@@ -6,4 +6,4 @@ Your task is to return:
 true if developers from all of the following age groups have signed up: teens, twenties, thirties, forties, fifties, sixties, seventies, eighties, nineties, centenarian (at least 100 years young).
 false otherwise.
 
-* [ ] Implement an 'isAgeDiverse' function
+* [ complete ] Implement an 'isAgeDiverse' function

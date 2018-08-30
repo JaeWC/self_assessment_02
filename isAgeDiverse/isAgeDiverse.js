@@ -32,5 +32,25 @@
 // Age is represented by a number which can be any positive integer up to 199.
 
 var isAgeDiverse = function(s) {
-  //Your code here
+  if (s.length < 10) {
+    return false;
+  } 
+
+  var ageArray = s.map(function(element) { return parseInt(element.age / 10); })
+                  .map(function(element) { return (element >= 10) ? 10 : element; })
+                  .sort();
+
+  var sumAge = ageArray.reduce(function(finalSum, number, i) {
+    if (number !== ageArray[i-1]) {
+      finalSum += number;
+    }
+    return finalSum;
+  }, 0);
+
+  if (sumAge === 55) {
+    return true;
+  } else {
+    return false;
+  }
+
 };
