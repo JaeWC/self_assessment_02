@@ -14,5 +14,32 @@
 // [-5,-5,7,7,12,0] # should return [-10,14,12,0]
 
 var sumConsecutives = function(s) {
-  //Your code here
+
+  return s.reduce(function(resultArr, number, i) {
+    if (number !== s[i-1]) {
+      resultArr.push(number);
+    } else {
+	    resultArr[resultArr.length - 1] = resultArr[resultArr.length - 1] + number;
+    }
+    return resultArr;
+  }, []);
+
+  // var sumArr = [];
+
+  // for (var i = 0; i < s.length; i++) {
+  //   if (s[i] !== s[i+1]) {
+  //     sumArr.push(s[i]);
+  //   } else {
+  //     if (s[i+1] !== s[i+2]) {
+  //       sumArr.push(s[i] + s[i+1]);
+  //       i++;
+  //     } else {
+  //       sumArr.push(s[i] + s[i+1] + s[i+2]);
+  //       i+= 2;
+  //     }
+  //   }
+  // }
+
+  // return sumArr;
+
 };
