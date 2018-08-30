@@ -36,9 +36,10 @@ var isAgeDiverse = function(s) {
     return false;
   } 
 
-  var ageArray = s.map(function(element) { return parseInt(element.age / 10); })
-                  .map(function(element) { return (element >= 10) ? 10 : element; })
-                  .sort();
+  var ageArray = s.map(function(element) { 
+    var generation = parseInt(element.age / 10);
+    return (generation >= 10) ? 10 : generation;
+   }).sort();
 
   var sumAge = ageArray.reduce(function(finalSum, number, i) {
     if (number !== ageArray[i-1]) {
